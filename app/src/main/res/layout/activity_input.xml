@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ff3366cc"
-    android:stretchColumns="0,1,2">
-
+    android:stretchColumns="0,1,2,3">
     <!--
+    android:stretchColumns="0,1,2,3"
+    4개의 컬럼으로 늘려라
     -->
 
     <TableRow
@@ -22,7 +23,15 @@
             android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_column="1"
             android:layout_span="3" />
+        <!--
+            android:layout_column="1"
+            컬럼 1 부터 시작해서
+            android:layout_span="3"
+            3개의 컬럼을 차지함
+        -->
+
     </TableRow>
 
     <TableRow
@@ -36,13 +45,21 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:text="No" />
+        <!--
+            android:layout_column="1"
+            컬럼 1 부터 시작
+        -->
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="1"
+            android:layout_column="2"
             android:text="Yes" />
+        <!--
+            android:layout_column="2"
+            컬럼 2 부터 시작
+        -->
     </TableRow>
 
 </TableLayout>
